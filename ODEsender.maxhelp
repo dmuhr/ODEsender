@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 142.0, 189.0, 845.0, 606.0 ],
+		"rect" : [ -1285.0, 746.0, 845.0, 606.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 793.0, 14.0, 31.0, 18.0 ],
+					"text" : "V.2.1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 0.0, 0.0, 0.0 ],
 					"id" : "obj-50",
@@ -370,7 +383,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -589,12 +601,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 16,
+					"linecount" : 19,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 251.0, 254.0, 285.0, 221.0 ],
-					"text" : "@rate\n1-43 (hz). / Default: 40.\n\n@port_1 and @port_2\nUniverse assigned to ports 1 and 2 of this object\n- By default, ODE MK3 outputs universe 0 on port 1 and universe 1 on port 2\n- Universes canbe 0 to 32768\n- Art-net universe 0 = DMX Universe 1.\n\n@ip  / default 192.168.0.10 (ODE's factory)\nIP address of the ODE\n- Check that your ODE is not in DHCP mode. \n\n@rawdmx / default 0\nReceive a full dmx list, instea of pairs"
+					"patching_rect" : [ 251.0, 240.0, 285.0, 261.0 ],
+					"text" : "@rate\n1-43 (hz). / Default: 40.\n\n@port_1 and @port_2\nUniverse assigned to ports 1 and 2 of this object\n- By default, ODE MK3 outputs universe 0 on port 1 and universe 1 on port 2\n- Universes canbe 0 to 32768\n- Art-net universe 0 = DMX Universe 1.\n\n@ip  / default 192.168.0.10 (ODE's factory)\nIP address of the ODE\n- Check that your ODE is not in DHCP mode. \n\n@rawdmx / default 0\nReceive a full dmx list, instea of pairs\n\n@active\nBoolean. Activation flag / Default: 0."
 				}
 
 			}
@@ -727,7 +739,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "ODEsender.maxpat",
-				"bootpath" : "~/Documents/Projects/Artnet",
+				"bootpath" : "~/Documents/Max 8/Packages/ODE",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
